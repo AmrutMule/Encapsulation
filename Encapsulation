@@ -1,0 +1,53 @@
+package demo;
+
+public class LoginDetails {
+
+	private String instaId = "Amrut";
+	private String gmail = "iAm@gmail.com";
+	private int password = 777;
+	public String getInstaId() {
+		return instaId;
+	}
+	public void setInstaId(String instaId) {
+		this.instaId = instaId;
+	}
+	public String getGmail() {
+		return gmail;
+	}
+	public void setGmail(String gmail) {
+		this.gmail = gmail;
+	}
+	public int getPassword() {
+		return password;
+	}
+	public void setPassword(int password) {
+		this.password = password;
+	}
+	
+	
+}
+------------------------------------------------------------------------------
+package demo;
+
+public class Encapsulation {
+
+
+	void show() {
+		
+	LoginDetails L=new LoginDetails();
+	L.getGmail();
+	System.out.println(L.getInstaId());
+    System.out.println(L.getGmail());
+    L.setPassword(111);
+    System.out.println(L.getPassword());
+    }
+	
+public static void main(String[] args) {
+Encapsulation U=new Encapsulation();
+	U.show();
+	//Encapsulation U1=new Encapsulation();
+	//U1.show();
+}
+
+
+}
